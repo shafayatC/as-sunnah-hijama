@@ -1,0 +1,45 @@
+.wrapGalleryTesti {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.wrapGallery {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+
+    .gallery {
+        width: 60%;
+    }
+
+    .testimonial {
+        width: 40%;
+    }
+}
+
+
+/*		custom Layout: 1160px. */
+@media only screen and (min-width: 991px) and (max-width: 1160px) {}
+
+/*		Tablet Layout: 768px. */
+@media only screen and  (max-width: 991px) {
+    .wrapGalleryTesti {
+        padding-bottom: 25px;
+    }
+    .wrapGallery {
+        flex-direction: column;
+        .gallery {
+            width: 100%;
+        }
+        .testimonial {
+            width: 100%;
+        }
+    }
+
+}
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {}
+
+/*		Wide Mobile Layout: 480px.  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

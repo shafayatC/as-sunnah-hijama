@@ -1,0 +1,119 @@
+@use "variable";
+.whoWe_wrap {
+    background-color:#f7f7f7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .whoWe_container{
+        display: flex;
+        
+    grid-gap: 30px;
+    }
+}
+.ww_leftCont{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 50%;
+    .ww_img{
+        height: 290px;
+        width: 100%;
+    }
+}
+.weAreAbout{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    p{
+    line-height: 23px;
+    }
+}
+.ww_righCont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    grid-gap: 25px;
+}
+.rightContTop{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+     h3{
+         color: variable.$text-color-b; 
+     }
+     p{
+        color: variable.$text-color-bl; 
+     }
+}
+.rightContBottom{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 22px;
+}
+.weAreDisplay{
+    width: 48%;
+    span{
+        width: 50px;
+        height: 50px;
+        background: variable.$bg-color-green;
+        display: flex;
+        float: left;
+        align-items: center;
+        margin-right: 10px;
+        i{
+            margin: auto;
+            font-size: 28px;
+            color: #fff;
+            margin-top: 0;
+        }
+        h4{
+            color: variable.$text-color-b; 
+        }
+        p{padding-bottom: 5px;}
+    }
+}
+/*		custom Layout: 1160px. */
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+    .weAreDisplay{width: 47%;}
+    
+    }
+    
+
+/*		Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .weAreDisplay {  width: 46%;
+        span{ display: none;}
+    }
+}
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    .whoWe_container{
+        flex-direction: column;
+    }
+    .ww_leftCont{
+          width: 100%;
+        img {  min-height: 350px;}
+        }
+    .weAreAbout{  text-align: center;}
+    .ww_righCont{
+        width: 100%;
+        text-align: center;
+    }
+    .rightContTop {
+        h3 {margin: auto;}
+    }
+
+    .rightContBottom{
+        flex-direction: column;
+        grid-gap: 40px;
+    }
+    .weAreDisplay{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 6px;
+        span{
+            margin: auto;
+        }
+    }
+}

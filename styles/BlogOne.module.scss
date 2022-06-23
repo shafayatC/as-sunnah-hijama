@@ -1,0 +1,45 @@
+
+
+.contentWrap {
+    position: relative;
+    z-index: 9;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+
+    h2 {
+        color: #fff;
+        font-size: 38px;
+        padding-bottom: 10px;
+    }
+    p {
+        color: #fff;
+        padding-bottom: 30px;
+        line-height: 25px;
+    }
+    button {
+    padding: 13px 25px;
+    }
+}
+
+
+
+/*		custom Layout: 1160px. */
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+    }
+    
+
+/*		Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contentWrap{width:100%}    
+}
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    .contentWrap{
+        width: 100%;
+        h2{
+            font-size: 26px;
+        }
+    }    
+}

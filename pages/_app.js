@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import {useState, createContext } from 'react'
+import '../styles/globals.scss'
+
+export const domReadyManager = createContext();
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  
+  const [domReady, setDomReady] = useState(false)
+
+  return (
+    <domReadyManager.Provider value={[domReady, setDomReady]}>
+      <Component {...pageProps} />
+    </domReadyManager.Provider>
+  )
 }
 
 export default MyApp

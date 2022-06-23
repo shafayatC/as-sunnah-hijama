@@ -1,102 +1,110 @@
 @use "variable";
 
-#headerWrap{    
+#headerWrap {
     display: flex;
     flex-direction: column;
 }
+
 #headerTopWrap {
     background: variable.$bg-color-b;
 
-    border-top: 3px solid variable.$bg-color-green; 
+    border-top: 3px solid variable.$bg-color-green;
 }
-#headerTop{
+
+#headerTop {
     display: flex;
 }
+
 .logoWrap img {
     width: 190px;
     height: 37px;
 }
-.socialInfoWrap{
+
+.socialInfoWrap {
     flex-grow: 1;
     color: white;
     align-self: center;
     font-size: 13px;
     display: flex;
     grid-gap: 10px;
-    a {padding: 12px 3px;}
+
+    a {
+        padding: 12px 3px;
+    }
 }
-.contactInfoWrap{    
+
+.contactInfoWrap {
     flex-grow: 3;
     display: flex;
     color: white;
     justify-content: end;
     grid-gap: 5px;
 }
-.contactInfo{    
+
+.contactInfo {
     font-size: 14px;
-    padding: 12px;}
-.contactInfo::before{color: variable.$text-color-green}
-.resForm{background-color: variable.$bg-color-green;
-padding-left:25px; padding-right: 25px;}
-#headerBottom{display: flex;}
-.logoWrap{    width: 100px;
+    padding: 12px;
+}
+
+.contactInfo::before {
+    color: variable.$text-color-green
+}
+
+.resForm {
+    background-color: variable.$bg-color-green;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#headerBottom {
+    display: flex;
+}
+
+.logoWrap {
+    width: 100px;
     flex-grow: 1;
     height: 41px;
     position: relative;
-    align-self: center;}
-.menuWrap{    flex-grow: 9;
-    justify-content: end;
-    display: flex;}
-.menuList{
-         list-style: none;
-    display: flex;
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-    a {
-        padding: 7px 20px;
-    }
-  a:hover, .active {
-    background-color: variable.$bg-color-green;
-    border-radius: 19px;
-    color:#fff;
-}
- > li {    
-     position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 24px 0;
- }
- ul{     
-     list-style: none;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    opacity: 0;
-    visibility: hidden;
-    top: 80px;
-    border: 1px solid #eee;
-    transition: 0.3s;
-    transform: scaleY(0);
-    transform-origin: top;
-    background-color: #ffff;
-}
-ul > li {
-    display: flex;
-    flex-direction: column;
-}
-ul li > a {
+    align-self: center;
 }
 
-ul li > a:hover {
-    border-radius: 0px;
+/*		custom Layout: 1160px. */
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+    .socialInfoWrap{grid-gap: 5px;}
+    
+    }
+    
+/*		Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #headerTop {
+        flex-direction: column;
+    }
+
+    .contactInfoWrap {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .contactInfo {
+        font-size: 12px;
+    }
 }
-li:hover ul {
-    transform: scaleY(1);
-    transform-origin: top;
-    opacity: 1;
-    visibility: visible;
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    
+    #headerTopWrap {
+        display: none;
+    }
+
+    #headerBottom {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
 }
+
+/*		Wide Mobile Layout: 480px.  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 }

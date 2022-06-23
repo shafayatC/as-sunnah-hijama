@@ -1,11 +1,63 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from '../styles/Header.module.scss';
 import mylogo from '../public/logo.png'
 import Link from 'next/link';
+import Menu from './Menu';
 
 const Header = () => {
+    const menuItem = [
+        {
+            "name": "Home",
+            "path": "/",
+            "icon": "fa-movie"
+        },
+        {
+            "name": "Service",
+            "path": "#",
+            "icon": "fa-movie",
+            "subitem": [
+                {
+                    "name": "Hijama",
+                    "path": "/hijama",
+                    "icon": "fa-movie"
+                },
+                {
+                    "name": "Acupuncture",
+                    "path": "/acupuncture",
+                    "icon": "fa-movie"
+                },
+                {
+                    "name": "Rukeya",
+                    "path": "/rukeya",
+                    "icon": "fa-movie"
+                }
+            ]
+        },
+        {
+            "name": "About",
+            "path": "#",
+            "icon": "fa-movie"
+        },
+        {
+            "name": "Contact",
+            "path": "#",
+            "icon": "fa-movie",
+            "subitem": [
+                {
+                    "name": "Chate",
+                    "path": "/movie/Friday",
+                    "icon": "fa-movie"
+                },
+                {
+                    "name": "Map",
+                    "path": "/movie/Old-School",
+                    "icon": "fa-movie"
+                }
+            ]
+        }
+    ]
     return (
         <>
             <Head>
@@ -35,37 +87,14 @@ const Header = () => {
                 <div className='fwidth'>
                     <div id={style.headerBottom} className="container">
                         <div className={style.logoWrap}>
-                        <img
+                            <img
                                 src="/logo.png"
                                 alt="website logo"
                                 width={550}
                                 height={120}
                             />
-                             {/*
-                             
-                            <Image
-                                src="/../public/logo.png"
-                                alt="website logo"
-                                width={550}
-                                height={120}
-                                layout="fill"
-                            />
-                            */}
                         </div>
-                        <div className={style.menuWrap}>
-                            <ul className={style.menuList}>
-                                <li><Link href="/"><a className={style.active}>Home</a></Link></li>
-                                <li><Link href="/"><a>Service<span className='icon-angle-down'></span></a></Link>
-                                    <ul>
-                                        <li><Link href="/">Hijama</Link></li>
-                                        <li><Link href="/">Accupuncture</Link></li>
-                                        <li><Link href="/">Rukeya</Link></li>
-                                    </ul>
-                                </li>
-                                <li><Link href="/">About</Link></li>
-                                <li><Link href="/">Contact</Link></li>
-                            </ul>
-                        </div>
+                        <Menu menuItem={menuItem}/>
                     </div>
                 </div>
             </div>

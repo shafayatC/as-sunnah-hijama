@@ -1,0 +1,62 @@
+@use "variable";
+
+.counselerWrap {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    h2{
+        padding-bottom: 30px;
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+.counselor {
+    margin: 0px 10px;
+
+    .img {
+        height: 230px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.cnsDetail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: #f4f4f4;
+
+    p {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .social {
+        align-self: center;
+        a {
+            background-color: variable.$bg-color-green;
+            padding: 3px 5px;
+            color: #fff;
+            font-size: 13px;
+            margin: 0 5px;
+        }
+    }
+}
+
+
+/*		custom Layout: 1160px. */
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+}
+
+/*		Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+//.img {min-height: 250px !important; }
+}

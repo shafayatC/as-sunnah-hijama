@@ -1,0 +1,40 @@
+.reportWrap {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.report {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    i {
+        color: #fff;
+        font-size: 30px;
+        align-self: center;
+    }
+
+    span {
+        font-size: 45px;
+        color: #6AB43E;
+        font-weight: 500;
+        align-self: center;
+    }
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        align-self: center;
+        text-transform: uppercase;
+    }
+}
+
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    .reportWrap {
+        flex-direction: column;
+        grid-gap: 50px;
+    }
+}

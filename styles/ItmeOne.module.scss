@@ -1,0 +1,47 @@
+@use "variable";
+
+.itemOneWrap{
+    display: flex;
+    flex-direction: column;
+    img {width:100%}
+}
+.infoWrap {
+    display: flex;
+    background-color: variable.$bg-color-green-light;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    grid-gap: 10px;
+    border-top: 1px solid variable.$bg-color-gray-light;
+    h3{
+        color:variable.$text-color-w; 
+    }
+    p {
+        color:variable.$text-color-w; 
+    }
+    button {
+    width: 100px;
+    align-self: center;
+    font-size: 12px;
+    padding: 7px 17px;
+    border: #ccc;
+    background-color: variable.$bg-color-w;
+    color: variable.$bg-color-b;
+    border-radius: 3px;
+    }
+}
+
+/* responsive */
+
+/*		Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {}
+
+/*		Wide Mobile Layout: 480px.  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}

@@ -1,0 +1,11 @@
+.itemWrap {
+    display: flex;
+    grid-gap: 30px;
+    position: relative;
+    margin-top: -100px;
+    padding-bottom: 70px;
+}
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    .itemWrap {  flex-direction: column }
+}
