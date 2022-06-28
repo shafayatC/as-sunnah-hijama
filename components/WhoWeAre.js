@@ -8,7 +8,7 @@ const WhoWeAre = () => {
         <section className={styles.whoWe_wrap + " fwidth"}>
             <div className={styles.whoWe_container + ' container'}>
                 <div className={styles.ww_leftCont}>
-                    <img className={styles.ww_img} src="/img/cupping.jpg" alrt="cupping therapy" width={300} height={270} layout='fill' />
+                    <img className={styles.ww_img} src="/img/therapy.jpg" alrt="cupping therapy" width={300} height={270} layout='fill' />
                     <div className={styles.weAreAbout}>
                         <h3>Who We Are?</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni temporibus voluptates. Iure quam laboriosam ullam omnis nulla deleniti, repellendus sequi reiciendis quas voluptatibus consectetur alias aspernatur deserunt veritatis.</p>
