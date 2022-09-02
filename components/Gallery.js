@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import styles from '../styles/Gallery.module.scss';
-
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
-import { domReadyManager } from '../pages/_app';
 
 const Gallery = () => {
 
@@ -50,7 +48,7 @@ const Gallery = () => {
             <div className={styles.galleryImage}>
                 {gallaryImage.map((data, index) =>
 
-                    <div className={styles.img}>
+                    <div key={index} className={styles.img}>
                         <Image src={data} width={150} height={100} layout="fill" />
                         <div className={styles.image_shade}></div>
                         <div className={styles.img_icon}><i onClick={() => { openSlider(); setIndex(index) }} className='icon-picture'></i></div>
@@ -70,8 +68,8 @@ const Gallery = () => {
                                 color: "#98968f",
                                 index: { index }
                             }} >
-                            {gallaryImage.map(data =>
-                                <div className={styles.gl}><img src={data} /></div>
+                            {gallaryImage.map((data,index) =>
+                                <div key={index} className={styles.gl}><img src={data} /></div>
                             )}
                         </Carousel>
                     }

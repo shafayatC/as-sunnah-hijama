@@ -31,7 +31,7 @@ const Counselor = () => {
                 >
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d1.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d1.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -46,7 +46,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d2.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d2.jpg" width={230} height={260} layout='fill' alt="image" />
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -61,7 +61,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d3.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d3.jpg" width={230} height={260} layout='fill' alt="image" />
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -76,7 +76,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d4.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d4.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -92,7 +92,7 @@ const Counselor = () => {
                     
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d1.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d1.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -107,7 +107,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d2.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d2.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -122,7 +122,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d3.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d3.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>
@@ -137,7 +137,7 @@ const Counselor = () => {
                     </div>
                     <div className={styles.counselor}>
                         <div className={styles.img}>
-                            <Image src="/img/d4.jpg" width={230} height={260} layout='fill' />
+                            <Image src="/img/d4.jpg" width={230} height={260} layout='fill' alt="image"/>
                         </div>
                         <div className={styles.cnsDetail}>
                             <h4>Anderson Smith</h4>

@@ -46,7 +46,7 @@ const Menu = ({ menuItem }) => {
                         isDom && menuItem.map((navItem, index) => {
                             return (
 
-                                <li>
+                                <li key={index}>
 
                                     {"subitem" in navItem ? (
                                         <>
@@ -79,7 +79,7 @@ const Menu = ({ menuItem }) => {
                         isDom && menuItem.map((navItem, index) => {
                             return (
 
-                                <li>
+                                <li key={index}>
 
                                     {"subitem" in navItem ? (
                                         <>

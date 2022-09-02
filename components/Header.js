@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import style from '../styles/Header.module.scss';
-import mylogo from '../public/logo.png'
-import Link from 'next/link';
 import Menu from './Menu';
 
 const Header = () => {

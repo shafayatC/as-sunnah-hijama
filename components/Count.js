@@ -40,7 +40,7 @@ const Count = ({ number,  speed = 10 }) => {
     useEffect(() => {
         window.addEventListener("scroll", reveal);
 
-    }, [])
+    },[])
 
     return (
         <span className='cnt'>

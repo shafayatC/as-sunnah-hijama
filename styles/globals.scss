@@ -1,5 +1,6 @@
 @use "variable";
 @import url('../public/css/fontello.css');
+@import url('../public/css/animation.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 
 html,
@@ -123,30 +124,61 @@ p,
   grid-gap: 15px;
 
   input {
-      padding: 10px;
-      border: thin solid #f0f0f0;
-      box-shadow: 0 1px 8px #f0f0f0;
-      border-radius: 4px;
+    padding: 10px;
+    border: thin solid #f0f0f0;
+    box-shadow: 0 1px 8px #f0f0f0;
+    border-radius: 4px;
   }
 
   textarea {
-      padding: 10px;
-      width: 931px;
-      height: 143px;
-      border: thin solid #f0f0f0;
-      box-shadow: 0 1px 8px #f0f0f0;
-      border-radius: 4px;
+    padding: 10px;
+    width: 931px;
+    height: 143px;
+    border: thin solid #f0f0f0;
+    box-shadow: 0 1px 8px #f0f0f0;
+    border-radius: 4px;
   }
 
-  button {
-      padding: 14px;
-      background: #4bc952;
-      color: #ffff;
-      font-weight: bold;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+  .button_submit {
+    padding: 14px;
+    background: #4bc952;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
+}
+
+.ProseMirror {
+  border: thin solid #f0f0f0;
+  box-shadow: 0 1px 8px #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.imageUpload {
+  display: flex;
+  align-items: center;
+  flex-direction: revert;
+  grid-gap: 10px;
+
+  .img {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 100px;
+      display: none;
+    }
+
+    #uploadImage {}
+  }
+}
+#warningMsg{
+  color: #e80000;
 }
 /* end dashboard */
 /*		custom Layout: 1160px. */
@@ -175,7 +207,10 @@ p,
 
 /*		Mobile Layout: 320px.   */
 @media only screen and (max-width: 767px) {
- #essSlide{height: 200px ip !important;}
+  #essSlide {
+    height: 200px ip !important;
+  }
+
   #essFirst,
   #essSecond {
     background-size: 155% 100%;

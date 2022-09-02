@@ -8,7 +8,7 @@ export default function dashboard({ children }) {
                 <form className={'formDash'}>
                     <input placeholder='title' />
                     <textarea placeholder='Description'></textarea>
-                    <button>Submit</button>
+                    <button className='button_submit'>Submit</button>
                 </form>
             </Dash>
         </>

@@ -1,0 +1,16 @@
+.popup {
+    position: fixed;
+   // background: #adf5bf;
+    padding: 20px 42px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.success{
+    background-color: #d4edda;
+}
+.danger{
+    background-color: #f8d7da; 
+}
+.warning {
+    background-color: #fff3cd; 
+}

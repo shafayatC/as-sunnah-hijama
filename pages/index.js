@@ -1,17 +1,10 @@
 import React, { useEffect, useState, useContext } from 'react';
-
-import { DefaultImage } from 'default-image'
-import 'default-image/dist/index.css'
 import { ScrollEffect } from 'react-easy-scroll-effect'
 import 'react-easy-scroll-effect/dist/index.css'
-
-import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Slider from '../components/Slider'
 import ThreeItem from '../components/ThreeItem'
-import styles from '../styles/Home.module.css'
 import WhoWeAre from '../components/WhoWeAre';
 import Service from '../components/Service';
 import Counselor from '../components/Counselor';
@@ -21,7 +14,15 @@ import Wrap_gallery_test from '../components/Wrap_gallery_test';
 import { domReadyManager } from './_app';
 
 
-export default function Home() {
+export const getStaticProps = async (_context) => {
+  // fetch list of posts
+  return {
+    props: {},
+  }
+}
+
+
+const Home =()=> {
 
   const [domReady, setDomReady] = useContext(domReadyManager); 
 
@@ -50,3 +51,4 @@ export default function Home() {
     </>
   )
 }
+export default Home; 

@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from '../styles/WhoWe.module.scss';
 
-import Image from 'next/image'
-
 const WhoWeAre = () => {
     return (
         <section className={styles.whoWe_wrap + " fwidth"}>
